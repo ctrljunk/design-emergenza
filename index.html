@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento senza titolo</title>
+<style>
+  .mac-book-air-1 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 1);
+    padding: 21px 0 165px;
+    font-family: monospace;
+  }
+  /* Stile per la versione desktop (schermi più larghi di 600px) */
+  .div {
+    align-self: start;
+    display: flex;
+    margin-left: 29px; /* Questo margine guiderà il margine sinistro della tabella */
+    flex-direction: column;
+  }
+  
+  /* Stile per la tabella versione desktop */
+  table {
+    margin-top: 200px;
+    border-collapse: collapse;
+    width: calc(100% - 58px); /* Aggiunge margine sinistro e destro uguale */
+    margin-left: 29px; /* Uguale al margine sinistro di h2 */
+    margin-right: 29px; /* Uguale al margine sinistro di h2 */
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    height: 20px;
+  }
+  tr {
+    height: 40px;
+    border-bottom: 1px solid;
+    cursor: pointer; /* Aggiunge un puntatore per suggerire che la riga è cliccabile */
+  }
+
+  /* Effetto hover per rendere la riga interattiva */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+ 
+
+  /* Stile per la versione mobile (schermi con larghezza inferiore a 600px) */
+  @media (max-width: 600px) {
+    table {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%; /* Tabella occupa tutta la larghezza */
+    }
+    td:nth-child(3), th:nth-child(3) {
+      display: none; /* Nasconde la terza colonna */
+    }
+  }
+	
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+	
+.dot-1 {
+  background-color: #0d8ea3; /* Colore per "Alluvioni" */
+}
+
+.dot-2 {
+  background-color: #b21d17; /* Colore per "Isole di calore" */
+}
+
+.dot-3 {
+  background-color: #4f4289; /* Colore per "Emissioni" */
+}
+	
+.dot-4 {
+  background-color: #e08507; /* Colore per "Energia" */
+}
+
+.dot-5 {
+  background-color: #48803d; /* Colore per "Salute" */
+}
+
+
+
+
+	
+	
+	
+</style>
+</head>
+
+<body>
+  <div class="mac-book-air-1">
+    <div class="div">
+      <h2>Design per l’emergenza</h2>
+    </div>
+    <div class="div-2">
+      <div class="categoria"></div>
+    </div>
+
+    <table>
+      <tr>
+        <th>Titolo</th>
+        <th>Temi</th>
+        <th>Gruppo</th>
+      </tr>
+      <tr  onclick="window.location.href='Gruppo-1.html'">
+        <td>Senza titolo 01</td>
+        <td><span class="dot dot-1"></span>Alluvioni</td>
+        <td>Rosetti Beatrice, Coschina Giulia, Lella Giordana, Provera Matilde </td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-2.html'">
+        <td>FRESKO</td>
+        <td><span class="dot dot-2"></span>Isole di calore</td>
+        <td>Rebecca Barbiani, Riccardo Marangon, Sofia Modenese, Lorenzo Putinati</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-3.html'">
+        <td>Senza titolo 03</td>
+        <td><span class="dot dot-3"></span>Emissioni</td>
+        <td>Federica Dalla Mora, Elisa Tran, Martina Biasini, Laura Tamburrino</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-4.html'">
+        <td>Senza titolo 04</td>
+        <td><span class="dot dot-2"></span>Isole di calore</td>
+        <td>Alessandra Neri, Giulia Babolin, Gioele Cornaglia, Arianna Frigerio, Vittorio Schembari</td>
+      </tr>
+      <tr  onclick="window.location.href='Gruppo-5.html'">
+        <td>QUHI!</td>
+        <td><span class="dot dot-2"></span>Isole di calore</td>
+        <td>Matteo Boem, Mario Chiari, Tazio Keijser, Luca Marchesin</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-6.html'">
+        <td>Senza titolo 06</td>
+        <td><span class="dot dot-4"></span>Energia</td>
+        <td>Lorenzo Bertozzi, Livia Mazzocchetti, Ester Moretto, Jim Pieretti</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-7.html'">
+        <td>Nido urbano</td>
+        <td><span class="dot dot-2"></span>Isole di calore</td>
+        <td>Federica Buro, Alessandra D'Ercole, Anna Luisa Tortomasi</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-8.html'">
+        <td>Senza titolo 08</td>
+        <td><span class="dot dot-5"></span>Salute</td>
+        <td>Angela Trolese, Vittoria Ambrosi, Jenny Boato, Erica Pellizzaro</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-9.html'">
+        <td>Senza titolo 09</td>
+        <td><span class="dot dot-2"></span>Isole di calore</td>
+        <td>Vanessa Paschini, Aurora Marini, Cristian Piutti, Emanuele Di Iorio</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-10.html'">
+        <td>Che aria tira?</td>
+        <td><span class="dot dot-3"></span>Emissioni</td>
+        <td>Tommaso Antonelli, Andrea Malossi, Andrea Pintauro, Kangwen Zou</td>
+      </tr>
+      <tr onclick="window.location.href='Gruppo-11.html'">
+        <td>SI</td>
+        <td><span class="dot dot-4"></span>Energia</td>
+        <td>Nikhita Ivis, Manuel David Nigro, Gianluca Gorgoglione, Matteo Cappelli</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
